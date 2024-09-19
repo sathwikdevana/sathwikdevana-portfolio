@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5d93aea2b3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+   <div id="header">
+        <div class="container">
+            <nav>
+               <img src="images/logo.png.png" class="logo">
+               <ul id="sidemenu">
+                  <li><a href='#header'>Home</a></li>
+                  <li><a href='#about'>About</a></li>
+                  <li><a href='#services'>Services</a></li>
+                  <li><a href='#Certifications'>Certifications</a></li>
+                  <li><a href='#contact'>contact</a></li>
+                  <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+               </ul>
+               <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                 <p>FullStack Developer</p>
+                 <h1>Hi, I'm <span>Sathwik</span><br> Devana From India </h1>
+            </div>
+        </div>
+    </div>
+ 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.png.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="p">I am a B.Tech graduate in Electronics and Communication Engineering from Bapatla Engineering College, driven to apply my skills in Python, web development, and data science. I’m eager to launch my career as a developer and continuously grow in a fast-paced environment.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span><br>Developing websites and software</li>
+                                <li><span>SQL</span><br>Storing and processing information in a relational database.</li>
+                                <li><span>HTML&CSS</span><br>Used to create a web page and web applications.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents " id="experience">
+                            <ul>
+                                <li><span>Current</span><br>FullStack Development Training at CCBP 4.0 Academy</li>
+                                <li><span>january,2024-april,2024</span><br>Internship at Vestrics Solutions.</li>
+                                <li><span>2023</span><br>Internship about Face Detection using AI tools at College.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Bapatla Engineering College</span><br>Graduate in Electronics and Communication Engineering and focusing on Technologies and Developing..</li>
+                                <li><span>Sri Gowthami High School</span><br>Excelled in science and mathematics, laying a strong foundation for engineering studies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Simple Website Creation</h2>
+                    <p>
+                        Build basic, static websites using HTML, CSS, and JavaScript for small businesses, personal portfolios, or blogs.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL Database Queries</h2>
+                    <p>Help clients with basic SQL tasks such as creating databases, performing CRUD operations (Create, Read, Update, Delete), and simple data extraction</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Basic Data Analysis</h2>
+                    <p>
+                        Offer services like analyzing CSV or Excel files to extract insights, create summary reports, or visualize data using libraries like Pandas and Matplotlib.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="Certifications">
+        <div class="container">
+            <h1 class="sub-title">My Certifications</h1>
+             <div class="certificate-list">
+                <div class="certificate">
+                    <img src="images/certifications1.png.png">
+                    <div class="layer">
+                        <h3>AWS Certification</h3>
+                        <p>Building and Deploying an Application on AWS by CCBP 4.0 Academy</p>
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="images/certification2.png.jpg">
+                    <div class="layer">
+                        <h3>Data Science Certification</h3>
+                        <p>Data Science Basic foundations and Introduction by Great Learning</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="images/genai.certificate.png">
+                    <div class="layer">
+                        <h3>Generative AI Certification</h3>
+                        <p>Building a Generative AI Application by CCBP 4.0 Academy</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+             </div>
+             <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>devanasathwik@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7989730021</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/My resume..pdf" download class="btn btn2">Download Cv</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxmdlxU-VRnWwBNSjVgaTDm26h-gDLMYVmiyPDnhhb24kcujfN8XFCQ7APkgcdJ8lDF/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+        })
+      </script>
+</body>
+</html>
