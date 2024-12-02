@@ -1,10 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;;
+    font-family: Arial, Helvetica, sans-serif;
+    ;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -20,30 +22,36 @@ body {
     height: 100vh;
     background-size: cover;
 }
-.container{
-    padding:10px 10%;
+
+.container {
+    padding: 10px 10%;
 }
-nav{
+
+nav {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
+
+.logo {
     width: 180px;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
-nav ul li a{
+
+nav ul li a {
     color: hsl(0, 0%, 99%);
     text-decoration: none;
     font-size: 17px;
     position: relative;
 }
-nav ul li a::after{
+
+nav ul li a::after {
     content: '';
     width: 0%;
     height: 3px;
@@ -53,156 +61,186 @@ nav ul li a::after{
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     width: 100%;
 }
-.header-text{
+
+.header-text {
     margin-top: 20%;
     font-size: 30px;
-    
+
 }
-.header-text h1{
+
+.header-text h1 {
     font-size: 60px;
     margin-top: 20px;
 }
-.header-text h1 span{
+
+.header-text h1 span {
     color: #e90505;
 
 }
+
 /*---------------------------------*/
-#about{
+#about {
     padding: 80px 0;
     color: #fff;
 }
-.row{
+
+.row {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
-.about-col-1{
+
+.about-col-1 {
     flex-basis: 30%;
 }
-.about-col-1 img{
+
+.about-col-1 img {
     width: 100%;
     border-radius: 15px;
 }
-.about-col-2{
+
+.about-col-2 {
     flex-basis: 65%;
 }
-.p{
+
+.p {
     font-size: 17px;
 }
-.sub-title{
+
+.sub-title {
     font-size: 60px;
     font-weight: 600;
     color: #fff;
 }
-.tab-titles{
+
+.tab-titles {
     display: flex;
     margin: 20px 0 40px;
 }
-.tab-links{
+
+.tab-links {
     margin-right: 50px;
     font-size: 18px;
-    font-weight:500 ;
+    font-weight: 500;
     cursor: pointer;
     position: relative;
 }
-.tab-links::after{ 
+
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
-    background:#c61114 ;
+    background: #c61114;
     position: absolute;
     left: 0;
     bottom: -8px;
     transition: 0.5s;
 
 }
-.tab-links.active-link::after{
+
+.tab-links.active-link::after {
     width: 50%;
 }
-.tab-contents ul li{
-     list-style: none;
-     margin:10px 0;
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
 }
-.tab-contents ul li span{
+
+.tab-contents ul li span {
     color: #b83939;
     font-size: 14px;
 
 }
-.tab-contents{
+
+.tab-contents {
     display: none;
 }
-.tab-contents.active-tab{
+
+.tab-contents.active-tab {
     display: block;
 
 }
 
-#services{
+#services {
     padding: 30px 0;
 }
-.services-list{
+
+.services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap:40px ;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
     margin-top: 50px;
 }
-.services-list div{
+
+.services-list div {
     background: #262626;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
-    border-radius:10px;
-    transition:background 0.5s,transform 0.5s;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
 }
-.services-list div i{
-    font-size:50px ;
+
+.services-list div i {
+    font-size: 50px;
     margin-bottom: 30px;
 }
-.services-list div h2{
+
+.services-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.services-list div p{
+
+.services-list div p {
     font-size: 15px;
 }
-.services-list div a{
+
+.services-list div a {
     text-decoration: none;
     color: #fff;
     font-size: 15px;
     margin-top: 20px;
     display: inline-block;
 }
-.services-list div:hover{
+
+.services-list div:hover {
     background: #ff004f;
     transform: translateY(-10px);
 
 }
-.certificate-list{
+
+.certificate-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap:40px ;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
     margin-top: 50px;
 }
-.certificate{
+
+.certificate {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
-.certificate img{
+
+.certificate img {
     width: 100%;
     border-radius: 10px;
     display: block;
-    transition:transform 0.5s ;
+    transition: transform 0.5s;
 }
-.layer{
+
+.layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6),#ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
     border-radius: 10px;
-    position:absolute ;
+    position: absolute;
     left: 0;
     bottom: 0;
     overflow: hidden;
@@ -215,14 +253,16 @@ nav ul li a:hover::after{
     font-size: 14px;
     transition: height 0.5s;
 }
-.layer h3{
+
+.layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
 }
-.layer a{
+
+.layer a {
     margin-top: 20px;
     color: #ff004f;
-    text-decoration:none ;
+    text-decoration: none;
     font-size: 18px;
     line-height: 60px;
     background: #fff;
@@ -231,13 +271,16 @@ nav ul li a:hover::after{
     border-radius: 50%;
     text-align: center;
 }
-.certificate:hover img{
+
+.certificate:hover img {
     transform: scale(1.1);
 }
-.certificate:hover .layer{
+
+.certificate:hover .layer {
     height: 100%;
 }
-.btn{
+
+.btn {
     display: block;
     margin: 50px auto;
     width: fit-content;
@@ -248,27 +291,34 @@ nav ul li a:hover::after{
     color: #fff;
     transition: background 0.5s;
 }
-.btn:hover{
+
+.btn:hover {
     background: #ff004f;
 }
-.contact-left{
+
+.contact-left {
     flex-basis: 35%;
 }
-.contact-right{
+
+.contact-right {
     flex-basis: 60%;
 }
-.contact-left p{
+
+.contact-left p {
     margin-top: 30px;
 }
-.contact-left p i{
+
+.contact-left p i {
     color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
 }
-.social-icons{
+
+.social-icons {
     margin-top: 30px;
 }
-.social-icons a{
+
+.social-icons a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
@@ -276,19 +326,24 @@ nav ul li a:hover::after{
     display: inline-block;
     transition: transform 0.5s;
 }
-.social-icons a:hover{
+
+.social-icons a:hover {
     color: #ff004f;
     transform: translateY(-5px);
 }
-.btn.btn2{
+
+.btn.btn2 {
     display: inline-block;
     background: #ff004f;
 }
-.contact-right form{
+
+.contact-right form {
     width: 100%;
 }
-form input,form textarea{
-    width:100% ;
+
+form input,
+form textarea {
+    width: 100%;
     border: 0;
     outline: none;
     background: #262626;
@@ -298,65 +353,80 @@ form input,form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
-form .btn2{
+
+form .btn2 {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
 }
 
-nav .fa-solid{
+nav .fa-solid {
     display: none;
 }
-@media only screen and (max-width:600px){
-    .header-text{
+
+@media only screen and (max-width:600px) {
+    .header-text {
         margin-top: 100%;
         font-size: 16px;
     }
-    .header-text h1{
+
+    .header-text h1 {
         font-size: 30px;
     }
-    nav .fa-solid{
+
+    nav .fa-solid {
         display: block;
         font-size: 25px;
     }
-    nav ul{
+
+    nav ul {
         background: #ff004f;
         position: fixed;
         top: 0;
         right: -200px;
         width: 200px;
-        height:100vh ;
+        height: 100vh;
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
-        margin:25px;
+        margin: 25px;
     }
-    .sub-title{
+
+    .sub-title {
         font-size: 40px;
     }
-    .about-col-1,.about-col-2{
+
+    .about-col-1,
+    .about-col-2 {
         flex-basis: 100%;
     }
-    .about-col-1{
+
+    .about-col-1 {
         margin-bottom: 30px;
     }
-    .about-col-2{
+
+    .about-col-2 {
         font-size: 14px;
     }
-    .tab-links{
-        font-size:16px ;
+
+    .tab-links {
+        font-size: 16px;
         margin-right: 20px;
     }
-    .contact-left,.contact-right{
+
+    .contact-left,
+    .contact-right {
         flex-basis: 100%;
     }
 }
-#msg{
+
+#msg {
     color: #61b752;
-    margin-top:-40px ;
+    margin-top: -40px;
     display: block;
 }
